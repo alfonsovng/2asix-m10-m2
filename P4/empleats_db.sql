@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS titles;
+DROP TABLE IF EXISTS dept_emp;
+DROP TABLE IF EXISTS dept_manager;
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS salaries;
+DROP TABLE IF EXISTS employees;
+DROP TYPE IF EXISTS gender_type;
+CREATE TYPE gender_type AS ENUM ( 'Male', 'Female' );
+CREATE TABLE employees( id SERIAL PRIMARY KEY, birth_date DATE NOT NULL, first_name TEXT NOT NULL, last_name TEXT NOT NULL, gender gender_type NOT NULL, hire_date DATE NOT NULL );
+CREATE TABLE departments( id SERIAL PRIMARY KEY, name TEXT NOT NULL );
+CREATE TABLE dept_manager( id SERIAL PRIMARY KEY, dept_id INT NOT NULL REFERENCES departments(id), emp_id INT NOT NULL REFERENCES employees(id), from_date DATE NOT NULL, to_date DATE  );
+CREATE TABLE dept_emp( id SERIAL PRIMARY KEY, emp_id INT NOT NULL REFERENCES employees(id), dept_id INT NOT NULL REFERENCES departments(id), from_date DATE NOT NULL, to_date DATE );
+CREATE TABLE titles( id SERIAL PRIMARY KEY, emp_id INT NOT NULL REFERENCES employees(id), title TEXT NOT NULL, from_date DATE NOT NULL, to_date DATE );
+CREATE TABLE salaries( id SERIAL PRIMARY KEY, emp_id INT NOT NULL REFERENCES employees(id), salary MONEY NOT NULL, from_date DATE NOT NULL, to_date DATE );
