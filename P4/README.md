@@ -28,7 +28,7 @@ La captura següent és un exemple que jo he fet amb la seqüència `employees_i
 
 ## 5. Prova d'exportació amb CSV
 
-Fes una prova d'exportació. Per exemple, exporta tots els first_name i last_name DIFERENTS d'empleats que el nom comença per Z i el cognom acaba per Z. Has de tenir 62 resultats.
+Fes una prova d'exportació. Per exemple, exporta tots els first_name i last_name DIFERENTS d'empleats que el nom comença per Z i el cognom acaba per z. Has de tenir 62 resultats.
 
 Et deixo alguns enllaços que et poden ajudar:
 
@@ -56,9 +56,11 @@ Fes una còpia de seguretat de la base de dades comprimida amb gzip. En aquest e
 
 Crea una base de dades novas anomenada `backup_test` i restaura la còpia de seguretat que has fet en el punt anterior. Al mateix link que abans tens com restaurar un backup comprimit amb gzip: [https://gist.github.com/atenni/a73cfbec1b7fd367b833](https://gist.github.com/atenni/a73cfbec1b7fd367b833)
 
-## 9. Backup com a script
+Comprova que les dades s'han restaurat i, un cop comprovat, esborra la base de dades.
 
-Ara fes un script de backup de manera que el nom de fitxer afegeixi la data i hora quan s'ha fet la còpia de seguretat. Al link següent tens una ajuda de coom afegir el timestamp al nom d'un fitxer: [https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/](https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/)
+## 9. Script de backup
+
+Ara fes un script amb la comanda de backup del punt 7, però de manera que el nom de fitxer afegeixi la data i hora quan s'ha fet la còpia de seguretat. Al link següent tens una ajuda de coom afegir el timestamp al nom d'un fitxer: [https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/](https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/).
 
 ## 10. Dades en format HTML
 
