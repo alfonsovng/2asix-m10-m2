@@ -2,6 +2,8 @@
 
 La pràctica consisteix en importar i exportar fitxers de dades CSV a la nostra base de dades PostgreSQL. Les dades les heu d'importar a la vostra base de dades, que en el meu cas es diu `dbcristianoronaldo`.
 
+Els fitxers CSV han d'estar a l'equip on teniu el cliente `psql`, idealment a la vostra màquina real. El mès fàcil és que els descarregueu a una carpeta i executeu `psql` dins d'aquesta carpeta. Així és com ho he fet jo a les captures de pantalla.
+
 ## 1. Importa el fitxer d'empleats en format CSV empleats.CSV
 
 Per fer-ho, situat dins del client PSQL i executa la comanda `\copy`:
@@ -16,7 +18,7 @@ Fixa't en que he afegit la indicació de que consideri el text 'NULL' present al
 
 ## 3. Importa el CSVs de dept_emp, titles i salaries
 
-Les dades de `salaries` les tens en dos fitxers comprimits amb gzip.
+Les dades de `salaries` les tens en dos fitxers comprimits amb gzip. Hauràs de tenir cura dels NULL com a l'apartat anterior.
 
 ## 4. Corregeix els seqüencials
 
