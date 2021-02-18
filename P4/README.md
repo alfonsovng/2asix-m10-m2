@@ -30,7 +30,7 @@ La captura següent és un exemple que jo he fet amb la seqüència `employees_i
 
 ## 5. Prova d'exportació amb CSV
 
-Fes una prova d'exportació. Per exemple, exporta tots els first_name i last_name DIFERENTS d'empleats que el nom comença per Z i el cognom acaba per z. Has de tenir 62 resultats.
+Fes una prova d'exportació. Per exemple, exporta tots els first_name i last_name DIFERENTS d'empleats que el nom comença per Z i el cognom acaba per z. Has de tenir 97 resultats.
 
 Et deixo alguns enllaços que et poden ajudar:
 
