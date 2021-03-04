@@ -43,12 +43,14 @@ Torna a executar la consulta del punt 3. Notes alguna diferència? Torna a execu
 Revisa l'enllaç següent i detalla quins tipus d'indexes permet PostgreSQL:
 https://www.enterprisedb.com/postgres-tutorials/overview-postgresql-indexes
 
-## 7. Sintaxis de com crear un index y com esborrarlo
+## 7. Sintaxis de com crear un index i com esborrarlo
 
 Explica la sintaxis per a crear un índex a PostgreSQL. Inclou informació sobre els paràmetres `UNIQUE` i `CONCURRENTLY`. Explica també la sintaxis per esborrar un índex. Consulta els enllaços següents per a fer aquest apartat:
 
 * https://www.postgresql.org/docs/12/sql-createindex.html
 * https://www.postgresql.org/docs/12/sql-dropindex.html
+
+Finalment, esbrina com fer un llistat des del client `psql` de tots els indexes existents.
 
 ## 8. Un altre explain analyze
 
@@ -56,13 +58,13 @@ Executa la consula següent a la base de dades, que t'hauria de retornar 9 resul
 
 	select e.first_name, e.last_name, s.salary from employees as e join salaries as s on e.id = s.emp_id where s. salary > '$150,000' and s.to_date is NULL; 
 
-* Què retorna aquesta consulta?
+* Quina informació retorna aquesta consulta?
 
-* Executa ara la consulta amb la comanda `explain analyze` davant i explica quina informació obtens.
+* Executa ara la consulta amb la comanda `explain analyze` davant i, com en els punts anteriors, explica quina informació obtens.
 
 ## 9. Index parcial
 
-Consulta els enllaços següents i explica amb les teves paraules que és un índex parcial:
+Consulta els enllaços següents i explica amb les teves paraules que és un **índex parcial**:
 
 * https://www.postgresql.org/docs/12/indexes-partial.html
 * https://www.postgresqltutorial.com/postgresql-indexes/postgresql-partial-index/
@@ -71,6 +73,5 @@ Crea un índex parcial per indexar la columna `emp_id` de la taula `salaries` qu
 
 ## 10. Explain analyze amb l'index anterior
 
-Amb l'index creat, torna a executar la consulta del punt 8 i torna a fer l'explain/analyze. Compara els resultats i explica quins canvis s'han produït.
-
+Amb l'index del punt anteruir, creat, torna a executar la consulta del punt 8 i torna a fer l'explain/analyze. Compara els resultats i tracta d'explicar quins canvis s'han produït.
 
