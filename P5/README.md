@@ -69,7 +69,7 @@ Consulta els enllaços següents i explica amb les teves paraules que és un **�
 * https://www.postgresql.org/docs/12/indexes-partial.html
 * https://www.postgresqltutorial.com/postgresql-indexes/postgresql-partial-index/
 
-Crea un índex parcial per indexar la columna `emp_id` de la taula `salaries` quan la columna `to_date` es nul·la.
+Crea un índex parcial per indexar la columna `salary` de la taula `salaries` quan la columna `to_date` es nul·la.
 
 ## 10. Explain analyze amb l'index anterior
 
