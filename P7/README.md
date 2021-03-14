@@ -62,7 +62,7 @@ Prova-ho fent un update, un insert i un delete a la taula `employees`. Comprova 
 
 substitueix aquesta part de la funció per `session_user::text`.
 
-[Si el link anterior no està disponible, tens aquí el mateix article en format PDF](https://github.com/alfonsovng/2asix-m02-m10/files/6137261/docs.microfocus.com-How.to.Configure.PostgreSQL.Log.Files.Rotation.by.Size.pdf)
+*[Si el link anterior no està disponible, tens aquí el mateix article en format PDF](https://github.com/alfonsovng/2asix-m02-m10/files/6137261/docs.microfocus.com-How.to.Configure.PostgreSQL.Log.Files.Rotation.by.Size.pdf)*
 
 ## 5. PgSQL i triggers
 
@@ -84,6 +84,6 @@ Per a no omplir el disc de logs, implantaràs un sistema de rotació de logs set
 
 https://docs.microfocus.com/UCMDB/11.0/ucmdb-docs/docs/eng/doc_lib/Content/database/PostgreSQL_config_log_file_rotate.htm
 
-[Si el link anterior no està disponible, tens aquí el mateix article en format PDF](https://github.com/alfonsovng/2asix-m02-m10/files/6137259/vladmihalcea.com-PostgreSQL.audit.logging.using.triggers.pdf)
+*[Si el link anterior no està disponible, tens aquí el mateix article en format PDF](https://github.com/alfonsovng/2asix-m02-m10/files/6137259/vladmihalcea.com-PostgreSQL.audit.logging.using.triggers.pdf)*
 
 
