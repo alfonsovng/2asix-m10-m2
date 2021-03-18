@@ -4,7 +4,7 @@ La pràctica consisteix en fer algunes consultes complexes a la nostra base de d
 
 ## 1. Empleats mes joves
 
-Busca els empleats mes joves que són actualment a Marketing. Tindràs 7 resultats.
+Busca l'empleat  més jove que és actualment a Marketing. En realitat tindràs 7 resultats, perquè han nascut el mateix dia i són els més joves.
 
 *Indicació:*
 
@@ -33,7 +33,7 @@ Busca el salari mitjà actual de cada departament. El salari mitjà de Marketing
 * Fer servir `GROUP BY`
 
 ## 5. Dones senior
-Busca la data de contractació i el title dels empleats dones que el seu titol comença per 'Senior' i van ser contractades posterioment al 1 de gener del 2020. Tindràs 2 resultats.
+Busca la data de contractació i el title dels empleats dones que el seu titol comença per 'Senior' i van ser contractades posterioment al 1 de gener del 2000. Tindràs 2 resultats.
 
 *Indicació:*
 
