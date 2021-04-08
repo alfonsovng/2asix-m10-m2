@@ -76,7 +76,7 @@ Replica els mateixos passos que has fet amb la taula `employees` aquest cop amb 
 
 ## 7. Log de totes les consultes
 
-Per acabar, pots també registrar totes les consultes que es fan a la base de dades. Per fer-ho, posa el valor del paràmetre `log_statement`  a `all` i reinicia la base de dades. Desprès, fes una consulta i comprova que apareix al fitxer de logs. 
+Per acabar, pots també registrar totes les consultes que es fan a la base de dades. Per fer-ho, posa el valor del paràmetre `log_statement`  a `all` al fitxer de configuració `postgresql.conf` del teu cluster i reinicia la base de dades. Desprès, fes una consulta i comprova que apareix al fitxer de logs. 
 
 ## 8. Rotació del log
 
