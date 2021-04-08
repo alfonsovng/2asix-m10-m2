@@ -23,7 +23,7 @@ class User(UserMixin):
         self.email = email
         
     def __repr__(self):
-        return "%d/%s" % (self.id, self.email)
+        return "%d:%s" % (self.id, self.email)
 
 # some protected url
 @app.route('/')
@@ -67,8 +67,8 @@ def login():
     else:
         return """
         <form action="" method="post">
-            <p><input type="email" placeholder="email" name="email">
-            <p><input type="password" placeholder="password" name="password">
+            <p><input type="email" size="40" placeholder="email" name="email">
+            <p><input type="password" size="40" placeholder="password" name="password">
             <p><input type="submit" value="Login">
         </form>
         """
@@ -88,7 +88,7 @@ def page_not_found(e):
 # callback to reload the user object        
 @login_manager.user_loader
 def load_user(id):
-    #busco en base de datos el usuario
+    #busco en base de dades l'usuari
     cur.execute(f"""select email from users where id = {id}""")
     row = cur.fetchone()
 
