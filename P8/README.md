@@ -91,6 +91,36 @@ Crea una nova taula anomenada `productes` on es guardaran el productes de la lli
 
 Insereix un parell de productes associats al teu usuari i fes que es mostrin a la web de l'apartat anterior allà on diu *AQUÍ HAURIA DE MOSTRAR LA LLISTA DE LA COMPRA DEL USUARI AMD ID...*
 
----
+## 8. Tipus de dades binary
 
-*Continuarà...*
+Consulta la documentació de PostgreSQL sobre el tipus de dades `bytea`: https://www.postgresql.org/docs/12/datatype-binary.html
+
+Modifica la taula `productes` i crea una nova columna no nulla que sigui del tipus `bytea`.
+
+A continuació, afegeix imatges en format PNG als productes que has inserit en l'apartat anterior.
+
+Per fer els inserts des de psql, consulta l'exemple de Stackoverflow: https://stackoverflow.com/a/51387399
+
+![insert_bytea.png](insert_bytea.png)
+
+En aquest exemple es veu com primer heu d'importar la imatge fent servir la comanda `\lo_import` i llavors aquesta imatge queda guardat com a una taula interna com de `large objects` amb identificador 152237. Desprès, es fa un insert llegint el `large object`. Quan es llegeix amb la funció `loread`, hi ha el valor 1.000.000 que es per fixar una mida màxima de bytes, i amb la funció `lo_open` hi el valor [131072](https://dba.stackexchange.com/a/189718) que és tan sols un flag per indicar que llegeix el `large_object` com una seqüencia de números.
+
+## 9. Dades binàries a PostgreSQL
+
+A l'enllaç següent trobaràs informació de com guardar dades binàries a PostgreSQL: https://wiki.postgresql.org/wiki/BinaryFilesInDB
+
+Quines opcions hi ha i quins avantatges i desavantatges té cada opció?
+
+## 10. Imatges a la nostra web
+
+Modifica l'aplicació web per a que quan es mostrin els productes, es mostrin també les imatges PNG guardades a la base de dades.
+
+Per fer-ho, fes un query com la d'aquest exemple (canviant gif per png): https://stackoverflow.com/a/48942306
+
+I mira aquest altre exemple per veure com visualitzar una imatge en format base64 amb HTML: https://stackoverflow.com/a/8499716
+
+## 11. [OPCIONAL] Templates amb Flask
+
+Apartat opcional i que no res a veure amb bases de dades, però escriure HTML directament al cody python no és una pràctica recomanable. El que es fa servir són *templates*: https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates
+
+Modifica la teva aplicació web per a que faci servir templates i no hi hagi gens de code HTML al fitxer python.

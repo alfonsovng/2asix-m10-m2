@@ -34,7 +34,7 @@ def home():
 
     <hr />
     
-    <h3> AQUÍ HAURIA DE MOSTRAR LA LLISTA DE LA COMPRA DEL USUARI AMD ID #{current_user.id} </h3>
+    <h3> AQUÍ HAURIA DE MOSTRAR LA LLISTA DE LA COMPRA DE L'USUARI AMB ID #{current_user.id} </h3>
     
     <hr />
 
