@@ -107,7 +107,7 @@ Per fer els inserts des de psql, consulta l'exemple de Stackoverflow: https://st
 
 ![insert_bytea.png](insert_bytea.png)
 
-En aquest exemple es veu com primer heu d'importar la imatge fent servir la comanda `\lo_import` i llavors aquesta imatge queda guardat com a una taula interna com de `large objects` amb identificador 152237. Desprès, es fa un insert llegint el `large object`. Quan es llegeix amb la funció `loread`, hi ha el valor 1.000.000 que es per fixar una mida màxima de bytes, i amb la funció `lo_open` hi el valor [131072](https://dba.stackexchange.com/a/189718) que és tan sols un flag per indicar que llegeix el `large_object` com una seqüencia de números.
+En aquest exemple es veu com primer heu d'importar la imatge fent servir la comanda `\lo_import` i llavors aquesta imatge queda guardada a una taula interna de `large objects` amb identificador 152237. Desprès, es fa un insert llegint el `large object`. Quan es llegeix amb la funció `loread`, hi ha el paràmetre 1.000.000 que és per fixar una mida màxima de bytes, i amb la funció `lo_open` hi el paràmetre [131072](https://dba.stackexchange.com/a/189718) que és tan sols un flag per indicar que s'ha de llegir el `large_object` com una seqüència de números.
 
 ## 10. Imatges a la nostra web
 
