@@ -91,9 +91,13 @@ Crea una nova taula anomenada `productes` on es guardaran el productes de la lli
 
 Insereix un parell de productes associats al teu usuari i fes que es mostrin a la web de l'apartat anterior allà on diu *AQUÍ HAURIA DE MOSTRAR LA LLISTA DE LA COMPRA DEL USUARI AMD ID...*
 
-## 8. Tipus de dades binary
+## 8. Dades binàries a PostgreSQL
 
-Consulta la documentació de PostgreSQL sobre el tipus de dades `bytea`: https://www.postgresql.org/docs/12/datatype-binary.html
+A l'enllaç següent trobaràs informació de com guardar dades binàries a PostgreSQL: https://wiki.postgresql.org/wiki/BinaryFilesInDB
+
+Quines opcions hi ha i quins avantatges i desavantatges té cada opció?
+
+## 9. Tipus de dades bytea
 
 Modifica la taula `productes` i crea una nova columna no nulla que sigui del tipus `bytea`.
 
@@ -104,12 +108,6 @@ Per fer els inserts des de psql, consulta l'exemple de Stackoverflow: https://st
 ![insert_bytea.png](insert_bytea.png)
 
 En aquest exemple es veu com primer heu d'importar la imatge fent servir la comanda `\lo_import` i llavors aquesta imatge queda guardat com a una taula interna com de `large objects` amb identificador 152237. Desprès, es fa un insert llegint el `large object`. Quan es llegeix amb la funció `loread`, hi ha el valor 1.000.000 que es per fixar una mida màxima de bytes, i amb la funció `lo_open` hi el valor [131072](https://dba.stackexchange.com/a/189718) que és tan sols un flag per indicar que llegeix el `large_object` com una seqüencia de números.
-
-## 9. Dades binàries a PostgreSQL
-
-A l'enllaç següent trobaràs informació de com guardar dades binàries a PostgreSQL: https://wiki.postgresql.org/wiki/BinaryFilesInDB
-
-Quines opcions hi ha i quins avantatges i desavantatges té cada opció?
 
 ## 10. Imatges a la nostra web
 
